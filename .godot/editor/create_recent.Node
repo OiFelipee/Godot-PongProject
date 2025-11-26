@@ -1,0 +1,12 @@
+CollisionShape2D
+Sprite2D
+Area2D
+Timer
+Marker2D
+Node2D
+Label
+CharacterBody2D
+StaticBody2D
+Node
+Camera2D
+AnimatedSprite2D

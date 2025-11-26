@@ -1,0 +1,6 @@
+res://script/ball.gd
+res://script/game.gd
+res://scenes/game.tscn
+res://scenes/ball.tscn
+res://scenes/asteroid.tscn
+res://script/asteroid.gd
