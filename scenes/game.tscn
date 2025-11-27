@@ -85,4 +85,23 @@ label_settings = SubResource("LabelSettings_u5sy4")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Positions" type="Node2D" parent="."]
+
+[node name="Pos_01" type="Marker2D" parent="Positions"]
+position = Vector2(-158, 177)
+
+[node name="Pos_02" type="Marker2D" parent="Positions"]
+position = Vector2(-156, 322)
+
+[node name="Pos_03" type="Marker2D" parent="Positions"]
+position = Vector2(705, 118)
+
+[node name="Pos_04" type="Marker2D" parent="Positions"]
+position = Vector2(702, 251)
+
+[node name="TimerSpawner" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
 [connection signal="body_entered" from="Hole" to="." method="_on_hole_body_entered"]
+[connection signal="timeout" from="TimerSpawner" to="." method="_on_timer_spawner_timeout"]
