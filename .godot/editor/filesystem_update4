@@ -1,4 +1,5 @@
-res://script/game.gd
-res://scenes/game.tscn
-res://script/asteroid.gd
 res://scenes/asteroid.tscn
+res://script/asteroid.gd
+res://scenes/game.tscn
+res://script/ball.gd
+res://script/game.gd

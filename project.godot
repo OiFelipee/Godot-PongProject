@@ -29,6 +29,14 @@ Start={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Ball"
+2d_physics/layer_3="Wall"
+2d_physics/layer_4="Asteroid"
+2d_physics/layer_5="Hole"
+
 [rendering]
 
 renderer/rendering_method="mobile"

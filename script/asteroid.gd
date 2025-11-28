@@ -27,4 +27,8 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 
 func _on_timer_delete_timeout() -> void:
 	queue_free()
-	print ("deleted")
+
+
+func _on_body_entered(body: Node2D) -> void:
+	body.pong += 1
+	queue_free()

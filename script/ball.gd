@@ -6,6 +6,7 @@ var start_speed = 500
 @export var incremental_speed = 1.02
 var angle = [250, -250, 300, -300]
 var pong = 0
+var max_speed = 1500
 
 
 #se apertou space e a variavel started segue false, o jogo começa
@@ -19,8 +20,12 @@ func _physics_process(_delta: float) -> void:
 		var _collision = move_and_collide(velocity*_delta)
 		if _collision != null:
 			if _collision.get_collider().name == "TopWall":
-				pong += 1
-				velocity = velocity.bounce(_collision.get_normal()) * incremental_speed
+				if (velocity.length() > max_speed):
+					pong += 1
+					velocity = velocity.bounce(_collision.get_normal())
+				else:
+					pong += 1
+					velocity = velocity.bounce(_collision.get_normal()) * incremental_speed	
 			else:
 				velocity = velocity.bounce(_collision.get_normal())
 				
